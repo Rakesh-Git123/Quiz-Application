@@ -33,7 +33,7 @@ const Signup = () => {
     data.append('image', formData.image);
     
     try {
-      const response = await fetch('http://localhost/grocery_website/server/signup.php', {
+      const response = await fetch('http://localhost/grocery_website/php/signup.php', {
         method: 'POST',
         body: data
       });

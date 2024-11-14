@@ -57,7 +57,7 @@ const Navbar = () => {
             </div>
             <div className='profile' ref={a}>
             <i className="fa-solid fa-xmark" id='cross' onClick={closeProfile}></i>
-                <img className='img' src={!userdetails.image?"https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg":"http://localhost/grocery_website/server/uploads/"+ userdetails.image} alt="" />
+                <img className='img' src={!userdetails.image?"https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg":"http://localhost/grocery_website/php/uploads/"+ userdetails.image} alt="" />
                 <p className="name">{userdetails.name?userdetails.name:"User"}</p>
                 {
                     isAuthenticated && userdetails.role==="user"? <button className='updateprofile'>Update Profile</button>:<></>

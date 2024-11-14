@@ -10,7 +10,7 @@ export const DataProvider=({children})=>{
 
     const checkAuth = async () => {
         try {
-          let res = await fetch('http://localhost/grocery_website/server/check_auth.php', {
+          let res = await fetch('http://localhost/grocery_website/php/check_auth.php', {
             method: "GET",
             headers: {
               'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ export const DataProvider=({children})=>{
 
       const currentUser=async()=>{
         try {
-          let res = await fetch('http://localhost/grocery_website/server/currentuser.php', {
+          let res = await fetch('http://localhost/grocery_website/php/currentuser.php', {
             method: "POST",
             headers: {
               'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export const DataProvider=({children})=>{
 
       const logout=async()=>{
         try{
-            let res = await fetch('http://localhost/grocery_website/server/logout.php',{
+            let res = await fetch('http://localhost/grocery_website/php/logout.php',{
                 method:"GET",
                 credentials: 'include'
             })

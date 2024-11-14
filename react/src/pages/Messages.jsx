@@ -18,7 +18,7 @@ const Messages = () => {
 
       const fetchMessage = async () => {
         try {
-            const response = await fetch('http://localhost/grocery_website/server/get_messages.php', {
+            const response = await fetch('http://localhost/grocery_website/php/get_messages.php', {
                 method: 'GET',
                 credentials: 'include',
             });
@@ -34,7 +34,7 @@ const Messages = () => {
     const deleteMessage = async (id) => {
 
         try {
-          const response = await fetch(`http://localhost/grocery_website/server/delete_message.php`, {
+          const response = await fetch(`http://localhost/grocery_website/php/delete_message.php`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const Messages = () => {
                         (message.map((item, index) => (
                             <tr key={index}>
                                 <td>{index + 1}</td>
-                                <td><img src={"http://localhost/grocery_website/server/uploads/"+ item.image} alt={`${item.name}'s profile`}/></td>
+                                <td><img src={"http://localhost/grocery_website/php/uploads/"+ item.image} alt={`${item.name}'s profile`}/></td>
                                 <td>{item.name}</td>
                                 <td>{item.message}</td>
                                 <td><i class="fa-solid fa-trash" onClick={()=>deleteMessage(item.id)}></i></td>

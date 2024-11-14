@@ -19,7 +19,7 @@ const Result = () => {
 
     const fetchResult = async () => {
         try {
-            const response = await fetch('http://localhost/grocery_website/server/get_result.php', {
+            const response = await fetch('http://localhost/grocery_website/php/get_result.php', {
                 method: 'GET',
                 credentials: 'include',
             });
@@ -34,7 +34,7 @@ const Result = () => {
     const deleteResult = async (email) => {
 
         try {
-          const response = await fetch(`http://localhost/grocery_website/server/delete_result.php`, {
+          const response = await fetch(`http://localhost/grocery_website/php/delete_result.php`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const Result = () => {
                         (result.map((item, index) => (
                             <tr key={index}>
                                 <td>{index + 1}</td>
-                                <td><img src={"http://localhost/grocery_website/server/uploads/"+ item.image} alt="" /></td>
+                                <td><img src={"http://localhost/grocery_website/php/uploads/"+ item.image} alt="" /></td>
                                 <td>{item.name}</td>
                                 <td>{item.score}</td>
                                 <td><i class="fa-solid fa-trash" onClick={()=>deleteResult(item.email)}></i></td>

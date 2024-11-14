@@ -10,7 +10,7 @@ const Contact = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault()
     try{
-      let res=await fetch('http://localhost/grocery_website/server/contact.php',{
+      let res=await fetch('http://localhost/grocery_website/php/contact.php',{
         method:"POST",
         headers: {
           'Content-Type': 'application/json',
@@ -19,7 +19,15 @@ const Contact = () => {
         body: JSON.stringify({name,image:userdetails.image,email,message})
       })
       let data=await res.json();
-      alert(data.message)
+      if(data.status==="success"){
+        alert(data.message);
+        setName("")
+        setEmail("")
+        setMessage("")
+      }
+      else{
+        alert(data.message)
+      }
 
     }
     catch(err){
@@ -41,7 +49,7 @@ const Contact = () => {
             <p>Contact us</p>
             <input className='input1' type="text" required placeholder='Name' name='name' value={name} onChange={(e)=>setName(e.target.value)} />
             <input className='input2' type="email" required placeholder='Email' name='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
-            <textarea placeholder='Message' required value={message} name='message' onChange={(e)=>setMessage(e.target.value)}></textarea>
+            <textarea className='pt-2' placeholder='Message' required value={message} name='message' onChange={(e)=>setMessage(e.target.value)}></textarea>
             <button className='button1'>Submit</button>
         </form>
         <div className='image'>

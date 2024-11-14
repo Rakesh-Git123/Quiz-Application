@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost/grocery_website/server/login.php', {
+      const response = await fetch('http://localhost/grocery_website/php/login.php', {
         method:"POST",
         credentials: 'include',
         headers: {

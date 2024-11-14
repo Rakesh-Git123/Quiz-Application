@@ -49,7 +49,7 @@ const AdminDashboard = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost/grocery_website/server/add_question.php', {
+      const response = await fetch('http://localhost/grocery_website/php/add_question.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const AdminDashboard = () => {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch('http://localhost/grocery_website/server/get_questions.php', {
+      const response = await fetch('http://localhost/grocery_website/php/get_questions.php', {
         method: 'GET',
         credentials: 'include',
       });
@@ -98,9 +98,8 @@ const AdminDashboard = () => {
   };
 
   const deleteQuestion = async (id) => {
-
     try {
-      const response = await fetch(`http://localhost/grocery_website/server/delete_question.php`, {
+      const response = await fetch(`http://localhost/grocery_website/php/delete_question.php`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -125,7 +124,7 @@ const AdminDashboard = () => {
   const handleUpdate = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('http://localhost/grocery_website/server/update_question.php', {
+      const response = await fetch('http://localhost/grocery_website/php/update_question.php', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

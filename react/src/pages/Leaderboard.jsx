@@ -12,7 +12,7 @@ const Leaderboard = () => {
 
     const fetchScores = async () => {
         try {
-            let res = await fetch("http://localhost/grocery_website/server/leaderboard.php", {
+            let res = await fetch("http://localhost/grocery_website/php/leaderboard.php", {
                 method: "GET",
                 credentials: "include",
                 headers: {
@@ -30,7 +30,7 @@ const Leaderboard = () => {
 
     const fetchImage=async(image)=>{
         try{
-            let res=await fetch("http://localhost/grocery_website/server/getImage.php",{
+            let res=await fetch("http://localhost/grocery_website/php/getImage.php",{
             method: "POST",
             headers: {
               'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const Leaderboard = () => {
             <tr key={leader.id}>
               <td>{index + 1}</td>
               <td>
-                <img src={"http://localhost/grocery_website/server/uploads/"+ leader.image} alt={`${leader.name}'s profile`} className="leader-image" />
+                <img src={"http://localhost/grocery_website/php/uploads/"+ leader.image} alt={`${leader.name}'s profile`} className="leader-image" />
               </td>
               <td>{leader.name}</td>
               <td>{leader.score}</td>

@@ -11,7 +11,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('http://localhost/grocery_website/server/get_questions.php');
+        const response = await fetch('http://localhost/grocery_website/php/get_questions.php');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {
@@ -51,7 +51,7 @@ const Quiz = () => {
     const finalScore = checkScore(); 
 
     try{
-        let res=await fetch("http://localhost/grocery_website/server/set_result.php",{
+        let res=await fetch("http://localhost/grocery_website/php/set_result.php",{
         method:'POST',
         credentials: 'include',
         headers: {
