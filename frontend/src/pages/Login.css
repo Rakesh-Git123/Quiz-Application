@@ -1,0 +1,84 @@
+.Login {
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #333;
+    padding: 20px;
+    background-image:url("https://4kwallpapers.com/images/wallpapers/gradient-background-6016x3384-11027.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Login .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+    width: 330px;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.Login h1 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Login input {
+    outline: none;
+    width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.Login input:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.2);
+}
+
+.Login button {
+    height: 40px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Login button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.Login p {
+    color: #f8f8f8;
+    font-size: 14px;
+}
+
+.Login a {
+    color: #ffea70;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.Login a:hover {
+    color: #ffcc33;
+}

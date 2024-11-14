@@ -1,0 +1,64 @@
+.Leaderboard {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    
+}
+
+.Leaderboard h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.Leaderboard th, .Leaderboard td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.Leaderboard th {
+    background-color: #ff8c00;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.Leaderboard td {
+    background-color: #f9f9f9;
+}
+
+.Leaderboard tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+.Leaderboard tr:hover td {
+    background-color: #ffefd5;
+    color: #333;
+}
+
+.Leaderboard .leader-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff8c00;
+}
+
+.Leaderboard .rank {
+    font-weight: bold;
+    font-size: 18px;
+}
+

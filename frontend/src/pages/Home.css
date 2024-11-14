@@ -1,0 +1,80 @@
+
+.Home {
+    padding: 20px 50px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    min-height: 92vh;
+    background-image:url("https://4kwallpapers.com/images/wallpapers/gradient-background-6016x3384-11027.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Home .welcome {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.Home .student {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .student div {
+    width: 80%;
+    max-width: 600px;
+    min-height: 40vh;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Home .student h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffea70;
+}
+
+.Home .student p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.Home .student button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Home .student button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+.Home .login-prompt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

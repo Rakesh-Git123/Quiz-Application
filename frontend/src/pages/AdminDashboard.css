@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.AdminDashboard {
+    padding: 20px 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.AdminDashboard .btn, .AdminDashboard button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.AdminDashboard .btn:hover, .AdminDashboard button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.AdminDashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden; /* Add this for rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.AdminDashboard th, .AdminDashboard td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.AdminDashboard th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.AdminDashboard tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.AdminDashboard tr:hover {
+    background-color: #e2e2e2; 
+}
+
+.AdminDashboard .modal-content {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.AdminDashboard .modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.AdminDashboard .modal-title {
+    margin: 0;
+}
+
+.AdminDashboard .close {
+    color: white;
+}
+
+
+.AdminDashboard form {
+    display: flex;
+    flex-direction: column;
+}
+
+.AdminDashboard form div {
+    margin-bottom: 15px;
+}
+
+.AdminDashboard label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.AdminDashboard input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.AdminDashboard input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.AdminDashboard .button1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.AdminDashboard i {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #dc3545; 
+}
+
+.AdminDashboard i:hover {
+    color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .AdminDashboard {
+        padding: 10px;
+    }
+
+    .AdminDashboard th, .AdminDashboard td {
+        padding: 10px;
+    }
+
+    .AdminDashboard button[type="submit"], .AdminDashboard .btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .AdminDashboard input[type="text"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+.Messages {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Messages h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.Messages img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Messages table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Messages thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.Messages th, .Messages td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.Messages tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.Messages tbody tr:hover {
+    background-color: #ddd;
+}
+
+.Messages th {
+    font-weight: bold;
+}
+
+.Messages td {
+    color: #333;
+}
+.Messages i{
+    cursor: pointer;
+}
